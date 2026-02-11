@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/faceit-demo-auto-manager-landing-site',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
