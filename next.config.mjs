@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/faceit-demo-auto-manager-landing-site',
+  // Only use basePath in production (GitHub Pages)
+  basePath: process.env.NODE_ENV === 'production' ? '/faceit-demo-auto-manager-landing-site' : '',
   images: {
     unoptimized: true,
     remotePatterns: [
