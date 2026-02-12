@@ -36,7 +36,7 @@ export const InstallationSection = () => {
           <CardContent className="space-y-6">
             <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
               <li>Visit Chrome Web Store</li>
-              <li>Click "Add to Chrome"</li>
+              <li>Click &quot;Add to Chrome&quot;</li>
               <li>Pin extension to toolbar</li>
             </ol>
             <Button
