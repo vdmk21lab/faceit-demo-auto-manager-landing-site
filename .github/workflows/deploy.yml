@@ -32,6 +32,11 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
+        env:
+          NEXT_PUBLIC_EXTENSION_URL: ${{ vars.NEXT_PUBLIC_EXTENSION_URL || 'https://example.com/extension' }}
+          NEXT_PUBLIC_NATIVE_APP_URL: ${{ vars.NEXT_PUBLIC_NATIVE_APP_URL || 'https://github.com/vdmk21lab/faceit-demo-auto-manager-native-app/releases' }}
+          NEXT_PUBLIC_GITHUB_REPO: ${{ vars.NEXT_PUBLIC_GITHUB_REPO || 'https://github.com/vdmk21lab/faceit-demo-auto-manager-native-app' }}
+          NEXT_PUBLIC_DOCS_URL: ${{ vars.NEXT_PUBLIC_DOCS_URL || 'https://example.com/docs' }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
