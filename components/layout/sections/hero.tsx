@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Chrome, Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/lib/utils/assetPath";
 
 export const HeroSection = () => {
   const extensionUrl = process.env.NEXT_PUBLIC_EXTENSION_URL || "https://example.com/extension";
@@ -61,7 +62,7 @@ export const HeroSection = () => {
         <div className="relative w-full h-[400px] lg:h-[500px] mt-8 lg:mt-0">
           <div className="absolute -top-4 -right-4 w-72 h-72 bg-orange-600/20 rounded-full blur-3xl"></div>
           <Image
-            src="/screenshots/extension-popup-screenshot.png"
+            src={getAssetPath("/screenshots/extension-popup-screenshot.png")}
             alt="FACEIT Demo Manager Extension"
             fill
             className="object-contain rounded-lg shadow-2xl relative z-10"
