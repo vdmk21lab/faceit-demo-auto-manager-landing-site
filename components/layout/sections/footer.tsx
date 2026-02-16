@@ -2,7 +2,6 @@
 import { Separator } from "@/components/ui/separator";
 import { Github } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 export const FooterSection = () => {
   const githubRepo = process.env.NEXT_PUBLIC_GITHUB_REPO || "https://example.com/repo";
@@ -15,7 +14,7 @@ export const FooterSection = () => {
           {/* Brand */}
           <div className="col-span-1">
             <Link href="#" className="flex font-bold items-center gap-2 mb-4">
-              <Image src="/icon-128.png" alt="FACEIT Demo Auto Manager" width={32} height={32} />
+              <img src="/icon-128.png" alt="FACEIT Demo Auto Manager" width={32} height={32} className="w-8 h-8" />
               <h3 className="text-xl">FACEIT Demo Auto Manager</h3>
             </Link>
             <p className="text-sm text-muted-foreground">
