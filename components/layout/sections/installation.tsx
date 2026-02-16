@@ -1,12 +1,12 @@
 "use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Chrome, Download } from "lucide-react";
+import { Chrome, Monitor } from "lucide-react";
 import Link from "next/link";
 
 export const InstallationSection = () => {
   const extensionUrl = process.env.NEXT_PUBLIC_EXTENSION_URL || "https://example.com/extension";
-  const nativeAppUrl = process.env.NEXT_PUBLIC_NATIVE_APP_URL || "https://example.com/releases";
+  const nativeAppUrl = process.env.NEXT_PUBLIC_NATIVE_APP_DOWNLOAD_URL || "https://example.com/releases";
 
   return (
     <section id="installation" className="container py-24 sm:py-32">
@@ -65,7 +65,7 @@ export const InstallationSection = () => {
             <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
               <li>Download Windows installer</li>
               <li>Run the .exe file</li>
-              <li>Native host registers automatically</li>
+              <li>You are ready to download your first demo!</li>
             </ol>
             <Button
               className="w-full font-bold"
@@ -73,7 +73,7 @@ export const InstallationSection = () => {
               asChild
             >
               <Link href={nativeAppUrl} target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
+                <Monitor className="mr-2 h-5 w-5" />
                 Download for Windows
               </Link>
             </Button>

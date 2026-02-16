@@ -1,6 +1,7 @@
 "use client";
-import { Gamepad2, Github, Menu } from "lucide-react";
+import { Github, Menu } from "lucide-react";
 import React from "react";
+import Image from "next/image";
 import {
   Sheet,
   SheetContent,
@@ -47,8 +48,8 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center gap-2">
-        <Gamepad2 className="w-7 h-7 text-orange-600" />
-        <span className="hidden sm:inline">FACEIT Demo Manager</span>
+        <Image src="/icon-128.png" alt="FACEIT Demo Auto Manager" width={28} height={28} />
+        <span className="hidden sm:inline">FACEIT Demo Auto Manager</span>
         <span className="sm:hidden">FD Manager</span>
       </Link>
 
@@ -70,8 +71,8 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center gap-2">
                   <Link href="/" className="flex items-center gap-2">
-                    <Gamepad2 className="w-7 h-7 text-orange-600" />
-                    <span>FACEIT Demo Manager</span>
+                    <Image src="/icon-128.png" alt="FACEIT Demo Auto Manager" width={28} height={28} />
+                    <span>FACEIT Demo Auto Manager</span>
                   </Link>
                 </SheetTitle>
               </SheetHeader>

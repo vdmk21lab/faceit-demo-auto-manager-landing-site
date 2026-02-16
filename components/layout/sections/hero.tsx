@@ -1,13 +1,13 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Chrome, Download } from "lucide-react";
+import { Chrome, Monitor } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/lib/utils/assetPath";
 
 export const HeroSection = () => {
   const extensionUrl = process.env.NEXT_PUBLIC_EXTENSION_URL || "https://example.com/extension";
-  const nativeAppUrl = process.env.NEXT_PUBLIC_NATIVE_APP_URL || "https://example.com/releases";
+  const nativeAppUrl = process.env.NEXT_PUBLIC_NATIVE_APP_DOWNLOAD_URL || "https://example.com/releases";
 
   return (
     <section className="container w-full">
@@ -46,8 +46,8 @@ export const HeroSection = () => {
               asChild
             >
               <Link href={nativeAppUrl} target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 h-5 w-5" />
-                Download Native App
+                <Monitor className="mr-2 h-5 w-5" />
+                Download Windows App
               </Link>
             </Button>
           </div>
@@ -63,7 +63,7 @@ export const HeroSection = () => {
           <div className="absolute -top-4 -right-4 w-72 h-72 bg-orange-600/20 rounded-full blur-3xl"></div>
           <Image
             src={getAssetPath("/screenshots/extension-popup-screenshot.png")}
-            alt="FACEIT Demo Manager Extension"
+            alt="FACEIT Demo Auto Manager Extension"
             fill
             className="object-contain rounded-lg shadow-2xl relative z-10"
             priority

@@ -42,7 +42,7 @@ export default function WelcomePage() {
             {/* Open Source Badge */}
             <div className="flex items-center justify-center gap-4 flex-wrap">
               <a
-                href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/your-username/faceit-demo-manager"}
+                href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/your-username/faceit-demo-manager"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-lg hover:bg-accent transition-colors"
@@ -126,14 +126,14 @@ export default function WelcomePage() {
                   {/* CTA Button */}
                   <div className="pt-2">
                     <a
-                      href={process.env.NEXT_PUBLIC_INSTALLER_URL || "#"}
+                      href={process.env.NEXT_PUBLIC_NATIVE_APP_DOWNLOAD_URL || "#"}
                       className="block w-full text-center bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-6 rounded-lg shadow-lg transition-all transform hover:-translate-y-0.5"
                     >
                       <span className="flex items-center justify-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                        Download Native App (Windows)
+                        Download Windows App
                       </span>
                     </a>
                     <p className="text-center text-xs text-muted-foreground mt-2">
@@ -220,7 +220,7 @@ export default function WelcomePage() {
               Need Help?
             </a>
             <a
-              href={process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/your-username/faceit-demo-manager"}
+              href={process.env.NEXT_PUBLIC_GITHUB_REPO || "https://github.com/your-username/faceit-demo-manager"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground text-sm transition-colors"

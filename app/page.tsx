@@ -5,26 +5,26 @@ import { InstallationSection } from "@/components/layout/sections/installation";
 import { FooterSection } from "@/components/layout/sections/footer";
 
 export const metadata = {
-  title: "FACEIT Demo Manager - CS2 Demo Utility",
+  title: "FACEIT Demo Auto Manager - CS2 Demo Utility",
   description: "Automate CS2 demo management. Download, organize, and play FACEIT demos with one click.",
   openGraph: {
     type: "website",
     url: "https://example.com",
-    title: "FACEIT Demo Manager",
+    title: "FACEIT Demo Auto Manager",
     description: "Automate CS2 demo management for FACEIT players",
     images: [
       {
         url: "/screenshots/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FACEIT Demo Manager",
+        alt: "FACEIT Demo Auto Manager",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "https://example.com",
-    title: "FACEIT Demo Manager",
+    title: "FACEIT Demo Auto Manager",
     description: "Automate CS2 demo management for FACEIT players",
     images: ["/screenshots/og-image.png"],
   },
