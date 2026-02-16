@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'export',
   // Only use basePath in production (GitHub Pages)
   basePath: process.env.NODE_ENV === 'production' ? '/faceit-demo-auto-manager-landing-site' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/faceit-demo-auto-manager-landing-site' : '',
   images: {
     unoptimized: true,
     remotePatterns: [
