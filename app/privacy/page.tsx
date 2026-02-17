@@ -1,8 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function PrivacyPage() {
+  useEffect(() => {
+    document.title = "Privacy Policy - FACEIT Demo Auto Manager";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Background gradient effects */}

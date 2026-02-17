@@ -65,6 +65,14 @@ export const FooterSection = () => {
                 Documentation
               </Link>
             </div>
+            <div>
+              <Link
+                href="/privacy"
+                className="text-sm opacity-60 hover:opacity-100 transition-opacity"
+              >
+                Privacy Policy
+              </Link>
+            </div>
           </div>
 
           {/* Connect */}

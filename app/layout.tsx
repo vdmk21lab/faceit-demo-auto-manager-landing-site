@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "FACEIT Demo Auto Manager - Automatic CS2 Demo Processing",
+  description: "Automatically process FACEIT CS2 demos with one click. Downloads are instantly decompressed and ready to watch in-game.",
 };
 
 export default function RootLayout({

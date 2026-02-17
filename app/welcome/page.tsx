@@ -1,8 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function WelcomePage() {
+  useEffect(() => {
+    document.title = "Welcome! - FACEIT Demo Auto Manager";
+  }, []);
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
